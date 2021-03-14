@@ -32,7 +32,7 @@ const useStyles = createUseStyles({
     },
 
     body: {
-      fontSize: 11,
+      fontSize: 14,
       fontFamily: 'Hind-Regular',
       color: MainColor,
       background: WhiteColor,
@@ -40,6 +40,16 @@ const useStyles = createUseStyles({
 
     ul: {
       listStyle: 'none',
+    },
+
+    h1: {
+      fontSize: 32,
+      fontFamily: 'IBMPlexSans-SemiBold',
+    },
+
+    h2: {
+      fontSize: 16,
+      fontFamily: 'IBMPlexSans-Bold',
     },
   },
 })
