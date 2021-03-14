@@ -1,6 +1,6 @@
 {
   "homepage": "https://nlysenko.github.io/cv",
-  "name": "Nikolai Lysenko CV",
+  "name": "cv",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
