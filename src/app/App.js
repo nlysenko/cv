@@ -7,6 +7,9 @@
 import React from 'react'
 import { createUseStyles } from 'react-jss'
 
+import Header from 'components/Header'
+import Main from 'components/Main'
+
 const WhiteColor = '#fff'
 const MainColor = '#212121'
 
@@ -44,7 +47,12 @@ const useStyles = createUseStyles({
 const App = () => {
   useStyles()
 
-  return <div>CV</div>
+  return (
+    <div>
+      <Header />
+      <Main />
+    </div>
+  )
 }
 
 export default App
