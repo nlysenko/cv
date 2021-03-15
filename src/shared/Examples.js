@@ -13,9 +13,55 @@ const useStyles = createUseStyles({
   },
 
   portfolio: {
-    paddingTop: 17,
+    paddingTop: 25,
+  },
+
+  work: {
+    paddingBottom: 20,
+  },
+
+  title: {
+    paddingBottom: 10,
+  },
+
+  item: {
+    padding: {
+      top: 5,
+      left: 20,
+    },
+  },
+
+  info: {
+    opacity: 0.6,
+    paddingRight: 10,
   },
 })
+
+const Works = [
+  {
+    name: 'Markup from PSD',
+    code: 'https://github.com/nlysenko/abz-agency-test',
+    result: 'https://nlysenko.github.io/abz-agency-test',
+  },
+
+  {
+    name: 'Markup from Figma',
+    code: 'https://github.com/nlysenko/expoforum',
+    result: 'https://nlysenko.github.io/expoforum',
+  },
+
+  {
+    name: 'Number to Words Translator',
+    code: 'https://github.com/nlysenko/number-to-words-translator',
+    result: 'https://nlysenko.github.io/number-to-words-translator',
+  },
+
+  {
+    name: 'Markup from Zeplin',
+    code: 'https://github.com/nlysenko/cobase-test',
+    result: 'https://nlysenko.github.io/cobase-test',
+  },
+]
 
 const Examples = () => {
   const classes = useStyles()
@@ -25,29 +71,23 @@ const Examples = () => {
       <h2>Code examples</h2>
 
       <div className={classes.portfolio}>
-        <p>Markup from PSD</p>
+        {Works.map((work, i) => (
+          <div className={classes.work} key={i}>
+            <h3 className={classes.title}>{work.name}</h3>
 
-        <a href="https://nlysenko.github.io/abz-agency-test/">
-          https://nlysenko.github.io/abz-agency-test
-        </a>
+            <p className={classes.item}>
+              <span className={classes.info}>Code:</span>
 
-        <p>Markup from Figma</p>
+              <a href={work.code}>{work.code}</a>
+            </p>
 
-        <a href="https://nlysenko.github.io/expoforum/">
-          https://nlysenko.github.io/expoforum
-        </a>
+            <p className={classes.item}>
+              <span className={classes.info}>Result:</span>
 
-        <p>Number to Words Translator</p>
-
-        <a href="https://nlysenko.github.io/number-to-words-translator/">
-          https://nlysenko.github.io/number-to-words-translator
-        </a>
-
-        <p>Markup from Zeplin</p>
-
-        <a href="https://nlysenko.github.io/cobase-test/">
-          https://nlysenko.github.io/cobase-test
-        </a>
+              <a href={work.result}>{work.result}</a>
+            </p>
+          </div>
+        ))}
       </div>
     </div>
   )

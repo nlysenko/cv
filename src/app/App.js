@@ -51,6 +51,11 @@ const useStyles = createUseStyles({
       fontSize: 16,
       fontFamily: 'IBMPlexSans-Bold',
     },
+
+    h3: {
+      fontSize: 13,
+      fontFamily: 'IBMPlexSans-Medium',
+    },
   },
 })
 

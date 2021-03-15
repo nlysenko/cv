@@ -13,15 +13,42 @@ import Skills from 'shared/Skills'
 import Employment from 'shared/Employment'
 import Examples from 'shared/Examples'
 
+import Avatar from 'assets/img/avatar.webp'
+
 const useStyles = createUseStyles({
   main: {
     width: 768,
     margin: [0, 'auto'],
-    padding: [90, 15, 0, 15],
+    padding: [240, 15, 48, 15],
+    position: 'relative',
+  },
+
+  avatar: {
+    width: 140,
+    height: 140,
+    position: 'absolute',
+    zIndex: 200,
+    top: 80,
+    left: 'calc(50% - 70px)',
+    right: 'calc(50% - 70px)',
+    background: {
+      image: `url(${Avatar})`,
+      size: 'cover',
+      position: ['center', 'center'],
+      repeat: 'no-repeat',
+    },
+    border: {
+      radius: '100%',
+      style: 'solid',
+      width: 3,
+      color: '#ffffff',
+    },
   },
 
   name: {
     textAlign: 'center',
+    position: 'relative',
+    zIndex: 200,
   },
 
   position: {
@@ -51,6 +78,8 @@ const Main = () => {
 
   return (
     <main className={classes.main}>
+      <i className={classes.avatar} />
+
       <h1 className={classes.name}>Nikolai Lysenko</h1>
 
       <p className={classes.position}>Junior front-end developer</p>
