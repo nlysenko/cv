@@ -9,12 +9,12 @@ import { createUseStyles } from 'react-jss'
 
 const useStyles = createUseStyles({
   education: {
-    paddingBottom: 15,
+    paddingBottom: 5,
   },
 
   university: {
     fontFamily: 'IBMPlexSans-Medium',
-    paddingTop: 17,
+    paddingTop: 10,
   },
 
   specialty: {
@@ -23,7 +23,7 @@ const useStyles = createUseStyles({
   },
 
   ending: {
-    fontSize: 13,
+    fontSize: 10,
     opacity: 0.5,
     textAlign: 'right',
     marginTop: -8,

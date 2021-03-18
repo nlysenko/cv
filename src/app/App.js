@@ -29,10 +29,17 @@ const useStyles = createUseStyles({
 
     a: {
       textDecoration: 'none',
+      color: MainColor,
+      marginBottom: -2,
+      opacity: 0.6,
+
+      '&:hover': {
+        opacity: 0.8,
+      },
     },
 
     body: {
-      fontSize: 14,
+      fontSize: 11,
       fontFamily: 'Hind-Regular',
       color: MainColor,
       background: WhiteColor,
@@ -42,18 +49,24 @@ const useStyles = createUseStyles({
       listStyle: 'none',
     },
 
+    img: {
+      display: 'block',
+    },
+
     h1: {
       fontSize: 32,
       fontFamily: 'IBMPlexSans-SemiBold',
+      lineHeight: '25px',
     },
 
     h2: {
-      fontSize: 16,
       fontFamily: 'IBMPlexSans-Bold',
+      fontSize: 13,
+      lineHeight: '15px',
     },
 
     h3: {
-      fontSize: 13,
+      fontSize: 11,
       fontFamily: 'IBMPlexSans-Medium',
     },
   },
@@ -65,6 +78,7 @@ const App = () => {
   return (
     <div>
       <Header />
+
       <Main />
     </div>
   )

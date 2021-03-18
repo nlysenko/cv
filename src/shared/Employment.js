@@ -9,18 +9,18 @@ import { createUseStyles } from 'react-jss'
 
 const useStyles = createUseStyles({
   wrapper: {
-    paddingTop: 25,
-    display: 'flex',
-    justifyContent: 'space-between',
+    paddingTop: 17,
   },
 
   experience: {
     fontFamily: 'IBMPlexSans-Medium',
+    display: 'inline-block',
   },
 
   timeSpan: {
-    fontSize: 13,
+    fontSize: 10,
     opacity: 0.5,
+    float: 'right',
   },
 })
 

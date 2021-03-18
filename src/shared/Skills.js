@@ -7,7 +7,7 @@
 import React from 'react'
 import { createUseStyles } from 'react-jss'
 
-const MainColor = '#212121'
+import Diamond from 'assets/img/diamond.png'
 
 const useStyles = createUseStyles({
   title: {
@@ -19,7 +19,7 @@ const useStyles = createUseStyles({
   },
 
   list: {
-    paddingLeft: 30,
+    paddingLeft: 23,
 
     '&:first-child': {
       paddingLeft: 0,
@@ -27,28 +27,22 @@ const useStyles = createUseStyles({
   },
 
   item: {
-    marginBottom: 5,
-    paddingLeft: 12,
-    position: 'relative',
+    marginBottom: 4,
+    display: 'flex',
+  },
 
-    '&:after': {
-      content: '""',
-      position: 'absolute',
-      width: 5,
-      height: 5,
-      backgroundColor: MainColor,
-      display: 'block',
-      transform: 'rotate(45deg)',
-      top: 8,
-      left: 0,
+  diamond: {
+    width: 5,
+    margin: {
+      top: 6,
+      right: 5,
     },
   },
 })
 
 const Experience = [
-  ['JavaScript', 'ES6', 'React', 'Redux', 'React Router'],
-  ['HTML5', 'CSS3', 'PostCSS', 'JSS', 'SASS'],
-  ['Photoshop', 'Zeplin', 'Figma', 'Git'],
+  ['JavaScript', 'ES6', 'React', 'Redux', 'React Router', 'HTML5', 'CSS3'],
+  ['PostCSS', 'JSS', 'SASS', 'Photoshop', 'Zeplin', 'Figma', 'Git'],
 ]
 
 const Skills = () => {
@@ -63,7 +57,15 @@ const Skills = () => {
           <ul className={classes.list} key={i}>
             {arr.map((item, i) => (
               <li className={classes.item} key={i}>
-                {item}
+                <i>
+                  <img
+                    className={classes.diamond}
+                    src={Diamond}
+                    alt="diamond"
+                  />
+                </i>
+
+                <span>{item}</span>
               </li>
             ))}
           </ul>

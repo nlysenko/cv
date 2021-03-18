@@ -9,19 +9,32 @@ import { createUseStyles } from 'react-jss'
 
 const useStyles = createUseStyles({
   examples: {
-    paddingTop: 30,
+    paddingTop: 17,
   },
 
   portfolio: {
-    paddingTop: 25,
+    paddingTop: 15,
   },
 
   work: {
-    paddingBottom: 20,
+    paddingBottom: 15,
   },
 
   title: {
-    paddingBottom: 10,
+    display: 'inline-block',
+    padding: {
+      right: 5,
+      bottom: 5,
+    },
+  },
+
+  description: {
+    opacity: 0.5,
+    fontSize: 10,
+  },
+
+  stack: {
+    opacity: 0.6,
   },
 
   item: {
@@ -29,35 +42,40 @@ const useStyles = createUseStyles({
       top: 5,
       left: 20,
     },
+
+    display: 'flex',
   },
 
   info: {
-    opacity: 0.6,
     paddingRight: 10,
   },
 })
 
 const Works = [
   {
-    name: 'Markup from PSD',
+    name: 'Abz-Agency',
+    description: '(Landing)',
     code: 'https://github.com/nlysenko/abz-agency-test',
     result: 'https://nlysenko.github.io/abz-agency-test',
   },
 
   {
-    name: 'Markup from Figma',
+    name: 'Expoforum',
+    description: '(Landing)',
     code: 'https://github.com/nlysenko/expoforum',
     result: 'https://nlysenko.github.io/expoforum',
   },
 
   {
     name: 'Number to Words Translator',
+    description: '(Application)',
     code: 'https://github.com/nlysenko/number-to-words-translator',
     result: 'https://nlysenko.github.io/number-to-words-translator',
   },
 
   {
-    name: 'Markup from Zeplin',
+    name: 'Cobase',
+    description: '(Application)',
     code: 'https://github.com/nlysenko/cobase-test',
     result: 'https://nlysenko.github.io/cobase-test',
   },
@@ -74,6 +92,8 @@ const Examples = () => {
         {Works.map((work, i) => (
           <div className={classes.work} key={i}>
             <h3 className={classes.title}>{work.name}</h3>
+
+            <span className={classes.description}>{work.description}</span>
 
             <p className={classes.item}>
               <span className={classes.info}>Code:</span>
