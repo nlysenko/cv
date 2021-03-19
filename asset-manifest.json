@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/cv/static/js/main.948cd319.chunk.js",
-    "main.js.map": "/cv/static/js/main.948cd319.chunk.js.map",
+    "main.js": "/cv/static/js/main.e9a8d6e6.chunk.js",
+    "main.js.map": "/cv/static/js/main.e9a8d6e6.chunk.js.map",
     "runtime-main.js": "/cv/static/js/runtime-main.155264d2.js",
     "runtime-main.js.map": "/cv/static/js/runtime-main.155264d2.js.map",
     "static/js/2.86089742.chunk.js": "/cv/static/js/2.86089742.chunk.js",
@@ -9,16 +9,11 @@
     "index.html": "/cv/index.html",
     "static/js/2.86089742.chunk.js.LICENSE.txt": "/cv/static/js/2.86089742.chunk.js.LICENSE.txt",
     "static/media/avatar.b6acace1.webp": "/cv/static/media/avatar.b6acace1.webp",
-    "static/media/banner.5ea2c43b.png": "/cv/static/media/banner.5ea2c43b.png",
-    "static/media/github.d3263084.png": "/cv/static/media/github.d3263084.png",
-    "static/media/gmail.a2f2146f.png": "/cv/static/media/gmail.a2f2146f.png",
-    "static/media/skype.1ed79736.png": "/cv/static/media/skype.1ed79736.png",
-    "static/media/telegram.e9722f26.png": "/cv/static/media/telegram.e9722f26.png",
-    "static/media/viber.61dd0730.png": "/cv/static/media/viber.61dd0730.png"
+    "static/media/banner.5ea2c43b.png": "/cv/static/media/banner.5ea2c43b.png"
   },
   "entrypoints": [
     "static/js/runtime-main.155264d2.js",
     "static/js/2.86089742.chunk.js",
-    "static/js/main.948cd319.chunk.js"
+    "static/js/main.e9a8d6e6.chunk.js"
   ]
 }
