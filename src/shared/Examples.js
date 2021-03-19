@@ -12,100 +12,123 @@ const useStyles = createUseStyles({
     paddingTop: 17,
   },
 
+  title: {
+    paddingBottom: 5,
+  },
+
   portfolio: {
     paddingTop: 15,
   },
 
-  work: {
-    paddingBottom: 15,
+  inner: {
+    paddingTop: 15,
   },
 
-  title: {
-    display: 'inline-block',
+  porject: {
     padding: {
-      right: 5,
-      bottom: 5,
+      top: 8,
+      left: 15,
     },
   },
 
-  description: {
-    opacity: 0.5,
-    fontSize: 10,
-  },
-
-  stack: {
-    opacity: 0.6,
-  },
-
-  item: {
-    padding: {
+  link: {
+    display: 'block',
+    margin: {
       top: 5,
-      left: 20,
+      left: 15,
     },
-
-    display: 'flex',
-  },
-
-  info: {
-    paddingRight: 10,
   },
 })
 
-const Works = [
-  {
-    name: 'Abz-Agency',
-    description: '(Landing)',
-    code: 'https://github.com/nlysenko/abz-agency-test',
-    result: 'https://nlysenko.github.io/abz-agency-test',
-  },
+const PetProjects = {
+  landings: [
+    {
+      name: 'ABZ Agency',
+      code: 'https://github.com/nlysenko/abz-agency-test',
+      demo: 'https://nlysenko.github.io/abz-agency-test',
+    },
 
-  {
-    name: 'Expoforum',
-    description: '(Landing)',
-    code: 'https://github.com/nlysenko/expoforum',
-    result: 'https://nlysenko.github.io/expoforum',
-  },
+    {
+      name: 'EXPOFORUM',
+      code: 'https://github.com/nlysenko/expoforum',
+      demo: 'https://nlysenko.github.io/expoforum',
+    },
+  ],
 
-  {
-    name: 'Number to Words Translator',
-    description: '(Application)',
-    code: 'https://github.com/nlysenko/number-to-words-translator',
-    result: 'https://nlysenko.github.io/number-to-words-translator',
-  },
+  apps: [
+    {
+      name: 'Number Translator',
+      code: 'https://github.com/nlysenko/number-to-words-translator',
+      demo: 'https://nlysenko.github.io/number-to-words-translator',
+    },
 
-  {
-    name: 'Cobase',
-    description: '(Application)',
-    code: 'https://github.com/nlysenko/cobase-test',
-    result: 'https://nlysenko.github.io/cobase-test',
-  },
-]
+    {
+      name: 'Cobase',
+      code: 'https://github.com/nlysenko/cobase-test',
+      demo: 'https://nlysenko.github.io/cobase-test',
+    },
+  ],
+}
 
 const Examples = () => {
   const classes = useStyles()
 
   return (
     <div className={classes.examples}>
-      <h2>Code examples</h2>
+      <h2>Pet-projects</h2>
 
-      <div className={classes.portfolio}>
-        {Works.map((work, i) => (
-          <div className={classes.work} key={i}>
-            <h3 className={classes.title}>{work.name}</h3>
+      <div className={classes.inner}>
+        <h3 className={classes.title}>Landings</h3>
 
-            <span className={classes.description}>{work.description}</span>
+        {PetProjects.landings.map((project, i) => (
+          <div className={classes.porject} key={i}>
+            <h4>{project.name}</h4>
 
-            <p className={classes.item}>
-              <span className={classes.info}>Code:</span>
+            <a
+              className={classes.link}
+              href={project.demo}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Demo
+            </a>
 
-              <a href={work.code}>{work.code}</a>
-            </p>
+            <a
+              className={classes.link}
+              href={project.code}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Code
+            </a>
+          </div>
+        ))}
+      </div>
 
-            <p className={classes.item}>
-              <span className={classes.info}>Result:</span>
+      <div className={classes.inner}>
+        <h3 className={classes.title}>Apps</h3>
 
-              <a href={work.result}>{work.result}</a>
-            </p>
+        {PetProjects.apps.map((project, i) => (
+          <div className={classes.porject} key={i}>
+            <h4>{project.name}</h4>
+
+            <a
+              className={classes.link}
+              href={project.demo}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Demo
+            </a>
+
+            <a
+              className={classes.link}
+              href={project.code}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Code
+            </a>
           </div>
         ))}
       </div>

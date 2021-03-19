@@ -19,7 +19,6 @@ const useStyles = createUseStyles({
 
   timeSpan: {
     fontSize: 10,
-    opacity: 0.5,
     float: 'right',
   },
 })

@@ -50,7 +50,6 @@ const useStyles = createUseStyles({
     fontSize: 10,
     lineHeight: '10px',
     paddingTop: 20,
-    opacity: 0.6,
   },
 })
 
@@ -65,7 +64,7 @@ const Header = () => {
 
       <h1 className={classes.name}>Nikolai Lysenko</h1>
 
-      <p className={classes.position}>Junior front-end developer</p>
+      <p className={classes.position}>Front-end developer</p>
     </header>
   )
 }

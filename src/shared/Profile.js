@@ -7,12 +7,6 @@
 import React from 'react'
 import { createUseStyles } from 'react-jss'
 
-import Viber from 'assets/img/viber.png'
-import Telegram from 'assets/img/telegram.png'
-import Skype from 'assets/img/skype.png'
-import GitHub from 'assets/img/github.png'
-import Gmail from 'assets/img/gmail.png'
-
 const useStyles = createUseStyles({
   profile: {
     paddingBottom: 10,
@@ -35,7 +29,6 @@ const useStyles = createUseStyles({
   },
 
   info: {
-    opacity: 0.6,
     lineHeight: '18px',
   },
 
@@ -64,31 +57,19 @@ const Profile = () => {
         </li>
 
         <li className={classes.item}>
-          <span className={classes.myData}>
-            <i className={classes.icon}>
-              <img className={classes.social} src={Viber} alt="viber" />
-            </i>
-
-            <i className={classes.icon}>
-              <img className={classes.social} src={Telegram} alt="telegram" />
-            </i>
-          </span>
+          <span className={classes.myData}>Phone:</span>
 
           <span className={classes.info}>+380661815339</span>
         </li>
 
         <li className={classes.item}>
-          <i className={classes.icon}>
-            <img className={classes.social} src={Skype} alt="skype" />
-          </i>
+          <span className={classes.myData}>Skype:</span>
 
           <span className={classes.info}>nikolai.v.lysenko</span>
         </li>
 
         <li className={classes.item}>
-          <i className={classes.icon}>
-            <img className={classes.social} src={Gmail} alt="gmail" />
-          </i>
+          <span className={classes.myData}>Mail:</span>
 
           <a href="mailto:nikolai.v.lysenko@gmail.com">
             nikolai.v.lysenko@gmail.com
@@ -96,11 +77,9 @@ const Profile = () => {
         </li>
 
         <li className={classes.item}>
-          <i className={classes.icon}>
-            <img className={classes.social} src={GitHub} alt="github" />
-          </i>
+          <span className={classes.myData}>GitHub:</span>
 
-          <a href="https://github.com/nlysenko">https://github.com/nlysenko</a>
+          <a href="https://github.com/nlysenko">github.com/nlysenko</a>
         </li>
 
         <li className={classes.item}>

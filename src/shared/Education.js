@@ -19,12 +19,10 @@ const useStyles = createUseStyles({
 
   specialty: {
     paddingTop: 6,
-    opacity: 0.6,
   },
 
   ending: {
     fontSize: 10,
-    opacity: 0.5,
     textAlign: 'right',
     marginTop: -8,
   },

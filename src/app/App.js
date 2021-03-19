@@ -11,7 +11,7 @@ import Header from 'components/Header'
 import Main from 'components/Main'
 
 const WhiteColor = '#fff'
-const MainColor = '#212121'
+const BlackColor = '#000'
 
 const useStyles = createUseStyles({
   '@global': {
@@ -29,9 +29,8 @@ const useStyles = createUseStyles({
 
     a: {
       textDecoration: 'none',
-      color: MainColor,
+      color: BlackColor,
       marginBottom: -2,
-      opacity: 0.6,
 
       '&:hover': {
         opacity: 0.8,
@@ -41,8 +40,9 @@ const useStyles = createUseStyles({
     body: {
       fontSize: 11,
       fontFamily: 'Hind-Regular',
-      color: MainColor,
+      color: BlackColor,
       background: WhiteColor,
+      margin: 0,
     },
 
     ul: {
@@ -67,6 +67,11 @@ const useStyles = createUseStyles({
 
     h3: {
       fontSize: 11,
+      fontFamily: 'IBMPlexSans-Medium',
+    },
+
+    h4: {
+      fontSize: 10,
       fontFamily: 'IBMPlexSans-Medium',
     },
   },

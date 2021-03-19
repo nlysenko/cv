@@ -41,8 +41,8 @@ const useStyles = createUseStyles({
 })
 
 const Experience = [
-  ['JavaScript', 'ES6', 'React', 'Redux', 'React Router', 'HTML5', 'CSS3'],
-  ['PostCSS', 'JSS', 'SASS', 'Photoshop', 'Zeplin', 'Figma', 'Git'],
+  ['React', 'Redux', 'React Router', 'PostCSS', 'JSS'],
+  ['SASS', 'Photoshop', 'Zeplin', 'Figma', 'Git'],
 ]
 
 const Skills = () => {
