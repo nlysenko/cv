@@ -35,7 +35,7 @@ const Employment = () => {
           Self-learning frontend technologies
         </p>
 
-        <span className={classes.timeSpan}>Oct 2020 - Mar 2021</span>
+        <span className={classes.timeSpan}>Oct 2020 - Jan 2022</span>
       </div>
     </div>
   )

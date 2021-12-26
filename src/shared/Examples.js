@@ -53,6 +53,12 @@ const PetProjects = {
       code: 'https://github.com/nlysenko/expoforum',
       demo: 'https://nlysenko.github.io/expoforum',
     },
+
+    {
+      name: 'Farel',
+      code: 'https://github.com/nlysenko/farel',
+      demo: 'https://nlysenko.github.io/farel',
+    },
   ],
 
   apps: [
@@ -90,7 +96,7 @@ const Examples = () => {
               target="_blank"
               rel="noreferrer"
             >
-              Demo
+              {project.demo}
             </a>
 
             <a
@@ -99,7 +105,7 @@ const Examples = () => {
               target="_blank"
               rel="noreferrer"
             >
-              Code
+              {project.code}
             </a>
           </div>
         ))}
@@ -118,7 +124,7 @@ const Examples = () => {
               target="_blank"
               rel="noreferrer"
             >
-              Demo
+              {project.demo}
             </a>
 
             <a
@@ -127,7 +133,7 @@ const Examples = () => {
               target="_blank"
               rel="noreferrer"
             >
-              Code
+              {project.code}
             </a>
           </div>
         ))}
